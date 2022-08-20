@@ -1,0 +1,9 @@
+/ip/firewall/filter/add action=reject chain=input src-address-list=block_ru_IP_ranges_ipv4
+/ip/firewall/filter/add action=reject chain=output dst-address-list=block_ru_IP_ranges_ipv4
+/ip/firewall/filter/add action=reject chain=forward src-address-list=block_ru_IP_ranges_ipv4
+/ip/firewall/filter/add action=reject chain=forward dst-address-list=block_ru_IP_ranges_ipv4
+
+/ipv6/firewall/filter/add action=reject chain=input src-address-list=block_ru_IP_ranges_ipv6
+/ipv6/firewall/filter/add action=reject chain=output dst-address-list=block_ru_IP_ranges_ipv6
+/ipv6/firewall/filter/add action=reject chain=forward src-address-list=block_ru_IP_ranges_ipv6
+/ipv6/firewall/filter/add action=reject chain=forward dst-address-list=block_ru_IP_ranges_ipv6
